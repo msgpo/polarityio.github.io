@@ -29,8 +29,19 @@ Navigate to the integrations folder on your Polarity Server:
 ```bash
 cd /app/polarity-server/integrations
 ```
+Generally, you will want to clone the latest release of the integration using the following command:
 
-Clone a specific version of the integration repo you are interested in installing:
+```bash
+git clone https://github.com/polarityio/${integration_name}.git 
+```
+
+For example, to clone the latest VirusTotal integration you would use the following command:
+
+```bash
+git clone https://github.com/polarityio/virustotal.git
+```
+
+If you are looking to install a specific version you can do that as well:
 
 ```bash
 git clone --branch ${integration_version} https://github.com/polarityio/${integration_name}.git 
